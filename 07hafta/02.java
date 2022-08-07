@@ -1,3 +1,5 @@
+//ortanca değeri bulmak için program//
+
 public class Main
 {
 	public static void main(String[] args) {
