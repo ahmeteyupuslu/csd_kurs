@@ -6,7 +6,7 @@ public class Main
 	    java.util.Scanner kb = new java.util.Scanner(System.in);
 		int a,b,i;
 		
-		System.out.print("a değerini giriniz : ");
+	    System.out.print("a değerini giriniz : ");
 	    a = kb.nextInt();
 	    
 	    System.out.print("b değerini giriniz : ");
