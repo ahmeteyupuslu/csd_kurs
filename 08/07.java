@@ -1,4 +1,5 @@
-// çözüm2 a ve b arasında 5 ve katlarını yazdırma
+// çözüm2 a ve b arasında 5 ve katlarını yazdırma. 5 yerine n ile genel bir çözüm çıkartılabilir.
+
 
 
 public class Main
