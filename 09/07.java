@@ -5,7 +5,7 @@ public class Main
     	public static void main(String[] args) {
     	    
     	    int a[]= {4,8,3,1,18,9,21,20,5,17};
-    	    int i, sum,size,count;
+    	    int i,sum,size,count;
     	    size=10;
     	    
     	    count=0;
