@@ -16,7 +16,7 @@ public class Main
     		    count=count+1;
     	      }
     	        
-    	      System.out.println("Tek sayı adedi: "+counnt);
+    	      System.out.println("Tek sayı adedi: "+count);
     	    
     	   
     	}
