@@ -19,10 +19,9 @@ public class Main
             else if (a[i]<min){
                 min=a[i];
                 k=i;}
-
-        temp=max;
+        
         a[p]=min;
-        a[k]=temp;
+        a[k]=max;
         
         for (i=0;i<size;i=i+1)
             System.out.print(a[i]+" ");
