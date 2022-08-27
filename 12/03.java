@@ -1,1 +1,1 @@
-//a dizisinde çiftleri sona atayan program.
+//a dizisinde tekleri başa,çiftleri sona atayan program.
