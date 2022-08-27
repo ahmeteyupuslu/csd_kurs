@@ -4,7 +4,7 @@ public class Main
 {
     public static void main(String[] args){
         int a[]={4,8,3,1,18,9,21,20,5,17};
-        int i,size,max,min,temp,p,k;
+        int i,size,max,min,p,k;
         size=10;
         
         max=a[0];
