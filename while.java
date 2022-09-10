@@ -139,4 +139,5 @@ public class Main {
   }
 }
 
-//klavyeden girilen sayının basamaklarında elde edilebilecek en büyük sayıyı bulan program.
+//klavyeden girilen sayının basamaklarındaki sayılarla elde edilebilecek en büyük sayıyı bulan program.
+
