@@ -140,4 +140,36 @@ public class Main {
 }
 
 //klavyeden girilen sayının basamaklarındaki sayılarla elde edilebilecek en büyük sayıyı bulan program.
+public class Main {
+    public static void main(String[] args) {
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+        int n,k,i,p,temp,e;
+        int a[]=new int[10];
 
+        System.out.print("n'yi giriniz : ");
+        n = kb.nextInt();
+
+        i=0;
+        p=0;
+
+        while (n != 0) {
+            a[p] = n%10;
+            n=n/10;
+            p=p+1;
+        }
+
+        for(i=0; i<p-1; i=i+1)
+            for(k=0; k<p-1-i; k=k+1)
+                if(a[k]<a[k+1]) {
+                    temp=a[k];
+                    a[k]=a[k+1];
+                    a[k+1]=temp;
+                }
+
+        e=0;
+        for(i=0; i<p; i=i+1) {
+            e=e*10+a[i];
+        }
+        System.out.printf("Yeni sayı: "+e);
+    }
+}
