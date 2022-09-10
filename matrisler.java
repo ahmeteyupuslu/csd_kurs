@@ -20,12 +20,6 @@ public class Main
     }
 }
 
-
-
-
-
-
-
 /* 1  2  3
    4  5  6 
    7  8  9 
@@ -50,16 +44,9 @@ public class Main
             for (k=0;k<col;k=k+1)
                 System.out.print(m[i][k]+" ");
             System.out.println();
-        }
+		}
     }
 }
-
-
-
-
-
-
-
 
 /*
   1-5-9
@@ -91,12 +78,6 @@ public class Main
     }
 }
 
-
-
-
-
-
-
 /*
 1-2-3
 1-2-3
@@ -127,12 +108,6 @@ public class Main
     }
 }
 
-
-
-
-
-
-
 /*
 1-1-1
 2-2-2
@@ -162,10 +137,6 @@ public class Main
     }
 }
 
-
-
-
-
 //matristeki değerlerin toplamını ve ortalamasını veren program.
 public class Main
 {
@@ -189,12 +160,7 @@ public class Main
     }
 }
 
-
-
-
-
-
-//her satırın toplamını ve ortalamısını yazdıran program
+//her satırın toplamını ve ortalamasını yazdıran program
 public class Main
 {
 	public static void main(String[] args) {
@@ -215,10 +181,6 @@ public class Main
         }
     }
 }
-
-
-
-
 
 //her sütunun toplamını ve ortalamasını yazdıran program
 public class Main
@@ -241,9 +203,6 @@ public class Main
     }
 }
 
-
-
-
 //matrisin en büyük değerini gösteren program
 public class Main
 {
@@ -262,10 +221,6 @@ public class Main
         System.out.printf("Matrisin en büyük değeri = " +max);
     }
 }
-
-
-
-
 
 //matrisin en büyük ve en küçük değerini bulan program
 public class Main
@@ -289,8 +244,6 @@ public class Main
         System.out.println("Matrisin en küçük değeri = " +min);
     }
 }
-
-
 
 //matrisin en büyük elemanını ve yerini bulan program
 
@@ -318,9 +271,6 @@ public class Main
 	    
 	}
 }
-
-
-
 
 //max değer ile min değerin yerlerini değiştiren program.
 public class Main
@@ -363,12 +313,6 @@ public class Main
 	}
 }
 
-
-
-
-
-
-
 //her satırın en büyük elemanını ekrana yazdıran program.
 public class Main
 {
@@ -389,7 +333,6 @@ public class Main
 	}
 }
 
-
 //her sütunun en büyük elemanını ekrana yazdıran program.
 public class Main
 {
@@ -409,9 +352,6 @@ public class Main
 	    }
 	}
 }
-
-
-
 
 //matrisin transpozunu alan program.
 public class Main
@@ -438,10 +378,6 @@ public class Main
         }
 	}
 }
-
-
-
-
 
 /*
 10000
@@ -471,10 +407,6 @@ public class Main
 	}
 }
 
-
-
-
-
 /*
 0 0 0 0 1
 0 0 0 1 0
@@ -503,10 +435,6 @@ public class Main
 	}
 }
 
-
-
-
-
 /
 public class Main
 {
@@ -532,11 +460,6 @@ public class Main
         }
 	}
 }
-
-
-
-
-
 
 /*	
 1  0  0  0  0 
@@ -572,14 +495,6 @@ public class Main
 	}
 }
 
-
-
-
-
-
-
-
-
 /*
 0  0  0  0  1
 0  0  0  2  3
@@ -610,18 +525,3 @@ public class Main{
 	    }
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
