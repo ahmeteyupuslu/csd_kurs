@@ -83,3 +83,60 @@ public class Main {
     }
   }
 }
+
+//klavyeden girilen sayıyı basamaklarına ayıran, sonrasında diziye kaydeden program.
+public class Main {
+
+  public static void main(String[] args) {
+    int a[] = new int[10];
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+    int n, size, i, b;
+
+    System.out.print("n'yi giriniz : ");
+    n = kb.nextInt();
+
+    i = 0;
+    size = 0;
+
+    while (n != 0) {
+      a[i] = n % 10;
+      i = i + 1;
+      n = n / 10;
+      size = size + 1;
+    }
+    i = 0;
+    for (i = 0; i < size; i = i + 1) System.out.printf(a[i] + " ");
+  }
+}
+
+//klavyeden girilen sayının tersiyle yeni bir sayı elde eden program ve bunu 2 ile çarpan program.
+public class Main {
+
+  public static void main(String[] args) {
+    java.util.Scanner kb = new java.util.Scanner(System.in);
+    int n, size, k, a, m, c;
+
+    System.out.print("n'yi giriniz : ");
+    n = kb.nextInt();
+
+    k = 0;
+    c = 1;
+    m = n;
+
+    while (m != 0) {
+      m = m / 10;
+      c = c * 10;
+    }
+
+    while (n != 0) {
+      a = n % 10;
+      n = n / 10;
+      c = c / 10;
+      k = k + (a * c);
+    }
+    System.out.println("yeni sayı: " + k);
+    System.out.printf("yeni sayının iki katı: " + (2 * k));
+  }
+}
+
+//klavyeden girilen sayının basamaklarında elde edilebilecek en büyük sayıyı bulan program.
