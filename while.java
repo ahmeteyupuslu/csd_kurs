@@ -6,9 +6,9 @@
    {} ile birleşik deyim oluşturulur.
 
    çevrim sayısının belli olduğu durumlarda for, olmadığı durumlarda while kullanılacak
-
-
  */
+
+
 
 public class Main
 {
@@ -22,8 +22,6 @@ public static void main(String[] args) {
         }
 }
 }
-
-
 
 
 
@@ -60,3 +58,7 @@ public static void main(String[] args) {
         System.out.print("Toplam: " + z);
 }
 }
+
+
+
+//
