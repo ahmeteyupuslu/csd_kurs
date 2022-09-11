@@ -45,8 +45,12 @@ public class Main {
     }
   }
 
-  // klavyeden girilen indis nolu elemanın kendinden önce olup olmadığını ekrana yazdıran program.
- public class Main {
+
+
+
+
+// klavyeden girilen indis nolu elemanın kendinden önce olup olmadığını ekrana yazdıran program.
+public class Main {
 	public static void main (String[] args) {
     	java.util.Scanner kb = new java.util.Scanner(System.in);
     	int a[] = {5, 5, 3, 7, 8, 5, 7, 7, 7, 3, 8, 9, 8, 9, 8, 8, 15, 5, 8, 4};
@@ -121,4 +125,28 @@ public class Main {
 		}
 	}
 }
+
+
+
+
+
+// sadece b dizisinde olan elemanları ekrana yazdıran program.
+public class Main {
+	public static void main (String[] args) {
+    	java.util.Scanner kb = new java.util.Scanner(System.in);
+    	int a[] = {5, 5, 3, 7, 8, 5, 7, 7, 7, 3, 8, 9, 8, 9, 8, 8, 15, 5, 8, 4};
+		int b[] = {8, 25, 7, 3, 70};
+    	int i, ind, sizeA, sizeB, flag;
+    	sizeA = 20;
+		sizeB = 5;
 		
+		for (ind = 0; ind < sizeB; ind = ind + 1) {
+		    flag = 0;
+		    for (i =0 ; i < sizeA; i = i + 1)
+			    if (a[i] == b[ind])
+				    flag = 1 ;
+		    if (flag == 0)
+			    System.out.println (b[ind] + " sayısı sadece b serisinde vardır.");
+		}
+	}
+}
