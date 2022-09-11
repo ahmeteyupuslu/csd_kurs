@@ -208,17 +208,15 @@ public class Main {
                 int b[] = {8, 13, 6, 12, 4, 5, 19, 1, 14, 25};
                 int i, k, size, flag;
                 size = 10;
-                
-                for (i = 0; i < size; i = i + 1) 
-                        System.out.print (a[i] + " ");
-                        
-                for (k = 0; k < size; k = k + 1) {                          
+             
+                for (i = 0; i < size; i = i + 1) {
+			System.out.print (a[i] + " ");
 			flag = 0;
-		        for (i = 0; i < size; i = i + 1)
-	                	if (a[i] == b[k])
+		        for (k = 0; k < size; k = k + 1)
+	                	if (b[i] == a[k])
 	                        	flag = 1;
 	                if (flag == 0)
-	                	System.out.print (b[k] + " ");
+	                	System.out.print (b[i] + " ");
              	}
 	}
 }
@@ -227,4 +225,28 @@ public class Main {
 
 
 
-// 
+// üç dizinin kesişimini bulan program.
+public class Main {
+	public static void main (String[] args) {
+    		java.util.Scanner kb = new java.util.Scanner(System.in);
+                int a[] = {4,  8, 3, 1, 18, 9, 21, 20, 5, 17};
+                int b[] = {8, 13, 6, 12, 4, 5, 19, 1, 14, 25};
+                int c[] = {6, 18, 8, 14, 2, 4, 72, 7, 28, 52};
+                int i, k, l, size;
+                size = 10;
+                        
+                for (k = 0; k < size; k = k + 1) {
+		        for (i = 0; i < size; i = i + 1)
+	                        if (a[i] == b[k])
+	                                for (l = 0; l < size; l = l +1)
+	                                        if (a[i] == c[l])
+	                                                System.out.print (b[k] + " ");
+                }
+	}
+}     
+
+
+
+
+
+// üç dizinin birleşimimi bulan program.
