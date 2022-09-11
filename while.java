@@ -10,29 +10,29 @@
 
 public class Main {
 
-  public static void main(String[] args) {
-    int i;
+	public static void main(String[] args) {
+		int i;
 
-    i = 1;
-    while (i <= 10) {
-      System.out.println(i);
-      i = i + 1;
-    }
-  }
+		i = 1;
+    	while (i <= 10) {
+      	System.out.println(i);
+      	i = i + 1;
+    	}
+  	}
 }
 
 //klavyeden sürekli sayı giriliyor. 0 girildiğinde programdan çıkılıyor.
 public class Main {
 
-  public static void main(String[] args) {
-    java.util.Scanner kb = new java.util.Scanner(System.in);
-    int n;
+	public static void main(String[] args) {
+		java.util.Scanner kb = new java.util.Scanner(System.in);
+    	int n;
 
-    while (n != 0) {
-      System.out.print("n'yi giriniz : ");
-      n = kb.nextInt();
-    }
-  }
+    	while (n != 0) {
+      		System.out.print("n'yi giriniz : ");
+      		n = kb.nextInt();
+    	}
+  	}
 }
 
 //klavyeye girilen sayıları toplayan,1000'i geçtiğinde toplamı yazıdırıp programı sonlandıran kod.
@@ -173,4 +173,74 @@ public class Main {
     }
     System.out.printf("Yeni sayı: " + e);
   }
+}
+
+//dizideki ilk tek sayıyı ve devamındakileri 2 ile çarpan program.
+public class Main {
+
+  public static void main(String[] args) {
+    int a[] = { 4, 8, 3, 1, 18, 9, 21, 20, 5, 17 };
+    int i, size, flag;
+    size = 10;
+
+    flag = 0; //gelmedi
+
+    for (i = 0; i < size; i = i + 1) {
+      if (a[i] % 2 != 0) flag = 1;
+      if (flag == 1) a[i] = a[i] * 2;
+    }
+
+    for (i = 0; i < size; i = i + 1) System.out.print(a[i] + " ");
+  }
+}
+
+//klavyede girilen sayının dizide olup olmadığını ekrana yazdıran program.
+public class Main {
+
+	public static void main(String[] args) {
+    	java.util.Scanner kb = new java.util.Scanner(System.in);
+    	int a[] = {5, 5, 3, 7, 8, 5, 7, 7, 7, 3, 8, 9, 8, 9, 8, 8, 15, 5, 8, 4};
+    	int i,n,size,flag;
+    	size=20;
+
+    	flag=0;
+    
+    	System.out.print("n'yi giriniz:");
+    	n=kb.nextInt();
+
+    	for (i=0;i<size;i=i+1){
+      		if (n==a[i])
+        		flag=1;}
+
+    	if (flag==0)
+        System.out.print (n + " sayısı seride yoktur.")
+        else 
+			System.out.print(n + " sayısı seride vardır.")
+
+    }
+  }
+
+  //klavyeden girilen indis nolu elemanın kendinden önce olup olmadığını ekrana yazdıran program.
+ public class Main {
+
+	public static void main(String[] args) {
+    	java.util.Scanner kb = new java.util.Scanner(System.in);
+    	int a[] = {5, 5, 3, 7, 8, 5, 7, 7, 7, 3, 8, 9, 8, 9, 8, 8, 15, 5, 8, 4};
+    	int i,ind,size,flag;
+    	size=20;
+
+    	flag=0;
+    	
+		System.out.print("indis numarasını giriniz:");
+    	ind=kb.nextInt();
+
+		for (i=0;i<ind;i=i+1){
+			if (a[ind] == a[i])
+				flag=1;
+			}
+		if (flag == 0)
+			System.out.print("YOK");
+		else
+			System.out.print("VAR");
+	}
 }
