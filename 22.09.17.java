@@ -47,3 +47,38 @@ public class Main {
                         System.out.print(a[i] + " ");
 	}
 }
+
+// basamaklarının küplerinin toplamı kendisine eşit olan üç basamaklı sayıları bulan program.
+public class Main {
+	public static void main (String[] args) {
+    		int i, k, m, c,size;
+    		size = 10;
+    		
+                for (i = 1; i < size; i = i + 1)
+		        for (k = 0; k < size; k = k + 1)
+		                for (m = 0; m < size; m = m + 1){
+		                c = i * 100 + k * 10 + m * 1;
+		                if ((i * i * i + k * k * k + m * m * m) == c)
+		                        System.out.println(c);
+		        }
+	}
+}
+
+// hocanın gösterdiği başka bir yöntem
+public class Main {
+	public static void main (String[] args) {
+    		int i, a, b, c, a3, b3, c3;
+    		
+    		for (i = 100; i <= 999; i = i + 1) {
+    		        a = i / 100;
+    		        b = i / 10 % 10;
+    		        c = i % 10;
+    		        a3 = a * a * a;
+    		        b3 = b * b * b;
+    		        c3 = c * c * c;
+    		        
+    		        if (i == a3 + b3 + c3)
+    		                System.out.println(i);
+                }
+	}
+}
