@@ -82,3 +82,25 @@ public class Main {
                 }
 	}
 }
+
+// 0 1 ile başlar. son iki sayının toplanması ile elde edilen fibonacci sayı dizisi... klavyeden girilen n'ye göre fibonacci sayı dizisini yazdıran program.
+public class Main {
+	public static void main (String[] args) {
+	        int temp, i, n;
+    	        java.util.Scanner kb = new java.util.Scanner(System.in);
+    	        
+    	        System.out.print("n'yi giriniz : ");
+    	        n = kb.nextInt();    	        
+    		int a[] = new int[n + 1];
+    		    		
+    		a[1] = 1;
+    		temp = 0;
+    		
+    		for (i = 2; i < n + 1; i = i + 1) {
+    		        a[i] = a[i - 1] + a[i - 2];    		          		        
+    		}
+
+                for (i = 0; i < n; i = i + 1)
+                        System.out.print (a[i] + " ");
+	}
+}
