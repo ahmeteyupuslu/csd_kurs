@@ -249,4 +249,56 @@ public class Main {
 
 
 
-// üç dizinin birleşimimi bulan program.
+// a ve b'de olup c'de olmayanları yazdıran program.
+public class Main {
+	public static void main (String[] args) {
+    		java.util.Scanner kb = new java.util.Scanner(System.in);
+                int a[] = {4,  8, 3, 1, 18, 9, 21, 20, 5, 17};
+                int b[] = {8, 13, 6, 12, 4, 5, 19, 1, 14, 25};
+                int c[] = {6, 18, 8, 14, 2, 4, 72, 7, 28, 52};
+                int i, k, m, size,flag;
+                size = 10;
+                        
+                for (i = 0; i < size; i = i + 1)
+                        for (k = 0; k < size; k = k + 1)
+                                if (a[i] == b[k]) {
+                                        flag = 0;
+                                        for (m = 0;m < size; m = m + 1)
+                                                if (a[i] == c[m])
+                                                        flag = 1;
+                                        if (flag == 0)
+                                                System.out.print(a[i] + " ");
+                                }
+	}
+}
+
+
+
+
+
+// dizideki sayıların kaçar tane olduğunu yazdıran program.
+public class Main {
+	public static void main (String[] args) {
+    		java.util.Scanner kb = new java.util.Scanner(System.in);
+                int a[] = {5, 5, 3, 7, 8, 5, 7, 7, 7, 3, 8, 9, 8, 9, 8, 8, 15, 5, 8, 4};
+                int i, k, size, flag, count;
+                size = 20;
+                        
+                for (i = 0; i < size; i = i + 1) {
+                        // daha önce sayılmış mı?
+                        flag = 0;
+                        for (k = 0; k < i; k = k + 1)
+                                if (a[i] == a[k])
+                                        flag = 1;
+                        
+                        // sayılmamışsa say
+                        if (flag == 0) {
+                                count = 1;
+                                for (k = i + 1; k < size; k = k +1)
+                                        if (a[i] == a[k])
+                                                count = count + 1;
+                                System.out.println(a[i] + " : " + count);
+                        }
+	        }
+        }
+}
