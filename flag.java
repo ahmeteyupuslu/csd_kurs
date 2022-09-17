@@ -302,3 +302,32 @@ public class Main {
 	        }
         }
 }
+
+
+
+
+
+// aralığın 0-15 olduğunu bilerek yaparsak
+public class Main {
+	public static void main (String[] args) {
+    		java.util.Scanner kb = new java.util.Scanner(System.in);
+                int a[] = {5, 5, 3, 7, 8, 5, 7, 7, 7, 3, 8, 9, 8, 9, 8, 8, 15, 5, 8, 4};
+                int b[] = new int [16];
+                int i, sizeA, sizeB;
+                sizeA = 20;
+                sizeB = 16;
+                
+                for (i = 0; i < sizeA; i = i + 1)
+                        b[a[i]] = b[a[i]] + 1;
+                        
+                for (i = 0; i < sizeB; i = i+1)
+                        if (b[i] != 0)
+                                System.out.println (i + " : " + b[i]);
+	}
+}
+
+
+
+
+
+//
