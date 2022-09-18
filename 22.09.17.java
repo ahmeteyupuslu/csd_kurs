@@ -104,3 +104,25 @@ public class Main {
                         System.out.print (a[i] + " ");
 	}
 }
+
+//hocanın çözüm
+public class Main
+{
+	public static void main(String[] args) {
+        int i, a, b, c, n;
+        java.util.Scanner kb = new java.util.Scanner(System.in);
+        
+        System.out.print("Bir sayı giriniz : ");
+        n = kb.nextInt();
+        a = 0;
+        b = 1;
+        
+
+        for (i = 0; i <= n; i = i + 1){
+           System.out.print(a + " "); 
+           c = a + b;
+           a = b;
+           b = c;
+        }
+     }
+}
