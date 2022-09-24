@@ -99,4 +99,112 @@ public class Main
 	}
 }
 
+//hepsi karışana kadar çalışmasını istersek:
+public class Main
+{
+	public static void main(String[] args) {
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int b[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+		java.util.Random generator = new java.util.Random();
+		int i, size, ind1, ind2, temp, count;
+		size = 10;
+		count = 1;
+		
+		while (count != 0){
+		        ind1 = generator.nextInt(10);
+		        ind2 = generator.nextInt(10);
+		        temp = a[ind1];
+		        a[ind1] = a[ind2];
+		        a[ind2] = temp;
+		        
+		        count = 0;
+		        for (i = 0; i < size; i = i + 1)
+		                if (a[i] == b[i])
+		                count = count + 1;
+		       }   
+		
+		
+		for (i = 0; i < 10; i = i + 1)
+	                System.out.print (a[i] + " ");	 
+	}	          
+}
+
+//bir milyon işlemde ortalama kaç kere karışması gerektiğini bulmak istersek. aynı kodun içinde 1 kerelik tamamen farklı sonuca ulaşmak istedi kere karışması gerektiği de var.
+//ben seriyi for içine alarak sürekli 2 çıkma hatasını bulmuştum.
+public class Main
+{
+	public static void main(String[] args) {
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int b[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+		java.util.Random generator = new java.util.Random();
+		int i, k, size, ind1, ind2, temp, count, countShuffle, avgcountShuffle;
+		size = 10;
+		countShuffle = 0;
+		
+		for(k = 0; k < 1000000 ; k = k + 1) {
+			        
+		count = 1;
+		while (count != 0) {
+		        countShuffle = countShuffle + 1;
+		        
+		        ind1 = generator.nextInt(10);
+		        ind2 = generator.nextInt(10);
+		        
+		        temp = a[ind1];
+		        a[ind1] = a[ind2];
+		        a[ind2] = temp;
+		        
+		        count = 0;
+		        for (i = 0; i < size; i = i + 1)
+		                if (a[i] == b[i])
+		                count = count + 1;
+		       
+		       }   
+	        for (i = 0;i < size; i = i + 1)
+	                a[i] = b[i];
+		}
+		
+		avgcountShuffle = countShuffle/1000000;
+		
+		System.out.print("Ortalama " + avgcountShuffle + " defa karıştıktan sonra dizi tamamen karıştı.");
+	
+        }
+}
+
+
+//kaç defa karışırsa eski haline döner
+public class Main
+{
+	public static void main(String[] args) {
+	        int a[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+	        int b[] = {4, 8, 3, 1, 18, 9, 21, 20, 5, 17};
+		java.util.Random generator = new java.util.Random();
+		int i, k, size, ind1, ind2, temp, count, countShuffle, countShuffleplus;
+		size = 10;
+		
+		countShuffle = 0;
+		
+		count = 0;
+		while (count != 10) {
+		        countShuffle = countShuffle + 1;
+		        
+		        ind1 = generator.nextInt(10);
+		        ind2 = generator.nextInt(10);
+		        
+		        temp = a[ind1];
+		        a[ind1] = a[ind2];
+		        a[ind2] = temp;
+		        
+		        count = 0;
+		        for (i = 0; i < size; i = i + 1)
+		                if (a[i] == b[i])
+		                count = count + 1;
+		       
+		       }
+		
+		System.out.print(countShuffle + " defa karıştıktan sonra dizi eski haline döndü.");
+        }
+}
+
+
 //
