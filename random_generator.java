@@ -207,4 +207,108 @@ public class Main
 }
 
 
-//
+//10'a kadar 6 farklı sayı üreten program.
+public class Main
+{
+	public static void main(String[] args) {
+	        java.util.Random generator = new java.util.Random();
+	        int a [] = new int [6];
+	        int k, i, n, flag;
+	        k=0;
+	        	        
+	        while (k < 6) {
+	                flag = 0;
+	                n = generator.nextInt(10);
+	                for (i = 0; i < k; i = i + 1)
+	                        if (a[i] == n)
+	                                flag = 1;
+	                if (flag == 0) {
+	                        a[k] = n;
+	                        k = k + 1;
+	                }   
+	        }
+	        
+	        for (i = 0; i < 6; i = i + 1)
+	                System.out.print(a[i] + " ");
+	}
+}
+
+//yazı tura attırma 1milyon defa
+public class Main
+{
+	public static void main(String[] args) {
+	        java.util.Random generator = new java.util.Random();
+	        int i, head, tail, total, n;
+	        
+	        total = 1000000;
+	        
+	        head = 0;
+	        
+	        for (i = 1; i <=total; i = i +1) {
+	                n = generator.nextInt(2);
+	                head = head + n;
+	        }
+	        
+	        tail = total - head;
+	        
+	        System.out.println("Yazı: " + tail + " Tura : " + head);
+	}
+}	
+
+//bilgisayara 360bin defa çift zar attırıp kaç kere 6 6 geldi diye kontrol edelim
+public class Main
+{
+	public static void main(String[] args) {
+	        java.util.Random generator = new java.util.Random();
+	        int i, m, n, count, total;
+	        
+	        total = 360000;
+	        
+	        count = 0;
+	        
+	        for (i = 1; i <= total; i = i +1) {
+	                n = generator.nextInt(6)+1;
+	                m = generator.nextInt(6)+1;
+	               
+	                if(m + n == 12)
+	                        count = count + 1;
+	        }
+	        
+	        System.out.println(count + " defa aynı anda altı gelmiştir.");
+	}
+}	
+
+//torbada 1den90a kadar 90 tane taş var. oyuncu 90 taşın üçünü çekecek(üçü farklı). çekilen taşların toplamı 101'e eşit veya küçükse oyuncu kazanır. 
+//oyuncunun kazanma olasılığını 1milyon defa oynatarak hesaplayalım. 
+public class Main
+{
+	public static void main(String[] args) {
+	        java.util.Random generator = new java.util.Random();
+	        int i, k, m, n, sum, s, flag ;
+	        float yuzde, total, count;
+	        total = 1000000;
+	        count = 0;
+	        for (i = 1; i <= total; i = i +1) {
+	                s=0;
+	                int a [] = new int [3];
+	                while (s<3) {
+	                        flag=0;
+	                        n = generator.nextInt(90)+1;
+	                        for (k=0; k<s; k=k+1)
+	                                if(a[k]==n)
+	                                        flag=1;
+	                        if (flag == 0) {
+	                                a [s] = n;
+	                                s = s + 1;
+	                        }
+	                }
+	                sum = 0;
+	                for(m = 0; m < 3;m = m + 1)
+	                        sum=sum+a[m];
+	                        if(sum<=101)
+	                                count = count + 1;
+	        }
+	        yuzde = (count / total) * 100;
+	        System.out.print("Oyuncu oyunu yüzde " + yuzde + " ihtimalle kazanabilir.");
+        }
+}
