@@ -312,3 +312,26 @@ public class Main
 	        System.out.print("Oyuncu oyunu yüzde " + yuzde + " ihtimalle kazanabilir.");
         }
 }
+
+//kazanma olasılığını matematiklsel olarak hesaplayalım. aynı üçlüler kullanılmayarak permutasyona oranlicaz.
+public class Main
+{
+	public static void main(String[] args) {
+	        java.util.Random generator = new java.util.Random();
+	        int i, k, m;
+	        double win, total, ratio;
+	        win = 0;
+	        total = 0;
+	        
+	        for (i=1; i <= 90; i = i + 1)
+	                for (k = i + 1; k <= 90; k = k + 1)
+	                        for (m = k + 1; m <= 90; m = m + 1) {
+	                                if (i + k + m <= 101)
+	                                        win = win + 1;
+	                                total = total + 1;                 
+	                        }
+	        ratio = win / total * 100;
+	        
+	        System.out.println("Kazanma olasılığı : " + ratio);
+	}	        
+}
